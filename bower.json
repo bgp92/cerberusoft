@@ -1,7 +1,7 @@
 {
-  "name": "vimesys",
+  "name": "cerberus",
   "version": "0.0.1",
-  "description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
+  "description": "CerberuSoft",
   "dependencies": {
     "bootstrap": "~3.3.0",
     "animate.css": "~3.2.0",

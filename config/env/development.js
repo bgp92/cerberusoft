@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/vimesys-dev',
+	db: 'mongodb://localhost/cerberus-dev',
 	app: {
-		title: 'VIMESYS - Development Environment'
+		title: 'Cerberus - Development Environment'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',

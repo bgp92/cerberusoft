@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/vimesys-test',
+	db: 'mongodb://localhost/cerberus-test',
 	port: 3001,
 	app: {
 		title: 'VIMESYS - Test Environment'

@@ -2,9 +2,9 @@
 
 module.exports = {
 	app: {
-		title: 'VIMESYS',
-		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
-		keywords: 'MongoDB, Express, AngularJS, Node.js'
+		title: 'CERBERUS',
+		description: 'CerberuSoft',
+		keywords: 'Software'
 	},
 	port: process.env.PORT || 3000,
 	udpPort: 6000,
