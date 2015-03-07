@@ -1,0 +1,95 @@
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">PDF Generator <span class="badge">Beta</span></h1>
+  <small class="text-muted">You can generate your pdf reports with this tool.</small>
+</div>
+<div class="wrapper-md">
+  <div class="row">
+    <div class="col-lg-6">
+      <!-- datepicker -->
+      <div ng-controller="DatepickerDemoCtrl" class="m-b-lg">
+        <h4>Calendar</h4>
+        <h5>Start of the report</h5>
+        <div class="m-b">
+          <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="datepicker"></datepicker>
+        </div>
+        <pre class="alert alert-info">From: <em>{{dt | date:'fullDate' }}</em></pre>
+        <div class="row">
+          <div class="col-md-6">
+            <label>From</label>
+            <p class="input-group">
+              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+          </div>
+        </div>
+        <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="clear()">Clear</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+      </div>
+      <!-- / datepicker -->
+
+      <!-- timepicker -->
+      <!-- <div ng-controller="TimepickerDemoCtrl" class="m-b-lg">
+        <h4>Timepicker</h4>
+        <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+
+        <pre class="alert alert-info">Time is: {{mytime | date:'shortTime' }}</pre>
+
+        <div class="row m-b"> 
+          <div class="col-xs-6">
+              Hours step is:
+            <select class="form-control" ng-model="hstep" ng-options="opt for opt in options.hstep"></select>
+          </div>
+          <div class="col-xs-6">
+              Minutes step is:
+            <select class="form-control" ng-model="mstep" ng-options="opt for opt in options.mstep"></select>
+          </div>
+        </div>
+        <button class="btn btn-info" ng-click="toggleMode()">12H / 24H</button>
+        <button class="btn btn-default" ng-click="update()">Set to 14:00</button>
+        <button class="btn btn-default" ng-click="clear()">Clear</button>
+      </div> -->
+      <!-- / tiempicker -->
+    </div>
+    <div class="col-lg-6">
+      <!-- datepicker -->
+      <div ng-controller="DatepickerDemoCtrl" class="m-b-lg">
+        <h4>Calendar</h4>
+        <h5>End of the report</h5>
+        <div class="m-b">
+          <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="datepicker"></datepicker>
+        </div>
+        <pre class="alert alert-info">To: <em>{{dt | date:'fullDate' }}</em></pre>
+        <div class="row">
+          <div class="col-md-6">
+            <label>To</label>
+            <p class="input-group">
+              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+          </div>
+        </div>
+        <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="clear()">Clear</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <button class="btn btn-danger btn-lg" ng-click="">Generate your PDF</button>
+    </div>
+  </div>
+</div>
