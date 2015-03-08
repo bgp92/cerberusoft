@@ -952,9 +952,9 @@ angular.module('app')
         },
         settings: {
           
-          themeID: 10,
-          navbarHeaderColor: 'bg-info dker',
-          navbarCollapseColor: 'bg-info dk',
+          themeID: 11,
+          navbarHeaderColor: 'bg-success',
+          navbarCollapseColor: 'bg-success',
           asideColor: 'bg-black',
 
           headerFixed: true,
