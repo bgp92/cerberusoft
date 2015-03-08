@@ -121,7 +121,18 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
+/* Callout */
 
+.cerberus {
+    
+    
+    height: 200px;
+    background: url(../img/profile.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 /* Map */
 
 .map {
