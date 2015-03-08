@@ -9,10 +9,10 @@ exports.index = function(req, res) {
 	});
 };
 /**
- * Module Vicore.
+ * Module Cerberus.
  */
-exports.vicore = function(req, res) {
-	res.render('vicore', {
+exports.cerberus = function(req, res) {
+	res.render('cerberus', {
 		user: req.user || null
 	});
 };

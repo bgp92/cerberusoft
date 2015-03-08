@@ -42,11 +42,10 @@ angular.module('app')
       suffix: '.js'
     });
     // // Tell the module what language to use by default
-    $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('es');
     // // Tell the module to store the language in the local storage
     //LOCAL STORAGE NOT WORKING!!!
     //$translateProvider.useLocalStorage();
-    console.warn('done');
   }]);
 
 // lazyload config
@@ -935,10 +934,10 @@ angular.module('app')
       var isIE = !!navigator.userAgent.match(/MSIE/i);
       isIE && angular.element($window.document.body).addClass('ie');
       isSmartDevice( $window ) && angular.element($window.document.body).addClass('smart');
-      console.warn('here we cum');
+
       // config
       $scope.app = {
-        name: 'Vimesys',
+        name: 'Cerberus',
         version: '0.0.1',
         // for chart colors
         color: {
@@ -984,7 +983,7 @@ angular.module('app')
       // angular translate
       $scope.lang = { isopen: false };
       $scope.langs = {en:'English', de_DE:'German',es:'Español'};
-      $scope.selectLang = $scope.langs[$translate.proposedLanguage()] || "English";
+      $scope.selectLang =  "Español";
       $scope.setLang = function(langKey, $event) {
         // set the current lang
         $scope.selectLang = $scope.langs[langKey];

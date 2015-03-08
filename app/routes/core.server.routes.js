@@ -4,5 +4,5 @@ module.exports = function(app) {
 	// Root routing
 	var core = require('../../app/controllers/core');
 	app.route('/').get(core.index);
-	app.route('/vicore').get(core.vicore);
+	app.route('/cerberus').get(core.cerberus);
 };
