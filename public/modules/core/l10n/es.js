@@ -53,7 +53,7 @@
 "aside" : {
   "nav" : {
     "HEADER" : "Navegacion",
-    "DASHBOARD" : "Cuadro de Mando",
+    "DASHBOARD" : "Bienvenido",
     "sensors" : {
       "SENSORS" : "Sensores",
       "TEMPERATURE" : "Temperatura",
@@ -61,10 +61,10 @@
       "PRESSURE" : "Presion"
     },
     "CALENDAR" : "Calendario",
-    "REPORTS" : "Informes",
-    "TABLE_REPORTS" : "Informes en Tablas",
-    "GRAPHIC_REPORTS" : "Informes Graficos",
-    "REPORT_PDF" : "Informe Pdf",
+    "REPORTS" : "Reportes",
+    "TABLE_REPORTS" : "Reportes en Tablas",
+    "GRAPHIC_REPORTS" : "Reportes Graficos",
+    "REPORT_PDF" : "Reporte Pdf",
     "EMAIL" : "Email",
     "apps" : {
       "APPS" : "Apps",
